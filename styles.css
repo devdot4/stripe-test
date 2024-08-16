@@ -50,11 +50,13 @@ nav ul li a:hover {
 
 /* Section Styles */
 section {
-  padding: 40px;
-  margin: 20px;
+  width: 60%; /* Apply consistent width across all sections */
+  margin: 20px auto; /* Center all sections */
+  padding: 20px;
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 section h2 {
@@ -63,11 +65,7 @@ section h2 {
   color: #4caf50;
 }
 
-#home {
-  text-align: center;
-}
-
-#products {
+#home, #products, #contact {
   text-align: center;
 }
 
@@ -81,40 +79,9 @@ section h2 {
 
 .buy-buttons stripe-buy-button {
   flex: 1;
-  max-width: 220px; /* Adjust this to control the width of the buttons */
-}
-
-/* Form Styles */
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-form label {
-  margin: 10px 0 5px;
-}
-
-form input, form textarea {
-  padding: 15px;
-  border: 2px solid #81c784;
-  border-radius: 4px;
-  font-size: 1rem;
-}
-
-form button {
-  margin-top: 20px;
-  background: #4caf50;
-  color: #fff;
-  border: none;
-  padding: 15px 30px;
-  border-radius: 5px;
-  font-size: 1.2rem;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-form button:hover {
-  background: #388e3c;
+  max-width: 300px;
+  min-width: 220px;
+  box-sizing: border-box;
 }
 
 /* Footer Styles */
@@ -127,4 +94,52 @@ footer {
   width: 100%;
   bottom: 0;
   box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Contact Section Styles */
+#contact {
+  width: 60%; /* Adjust width to make it skinnier */
+  margin: 0 auto; /* Center the contact section */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+#contact h2 {
+  text-align: center;
+  color: #4caf50;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact form label {
+  margin: 10px 0 5px;
+}
+
+#contact form input, #contact form textarea {
+  padding: 15px;
+  border: 2px solid #81c784;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+#contact form button {
+  margin-top: 20px;
+  background: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#contact form button:hover {
+  background: #388e3c;
 }
